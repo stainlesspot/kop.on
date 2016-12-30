@@ -10,10 +10,10 @@ import '../styles/video-requester-page.scss';
 
 class VideoRequesterPage extends React.Component {
   render() {
-    let videoSearchResultsComponent;
+    let VideoSearchResultsComponent;
 
     if(this.props.videoRequester.searchResults.count !== 0){
-      videoSearchResultsComponent = (
+      VideoSearchResultsComponent = (
         <VideoSearchResults videos={this.props.videoRequester.searchResults.videos}
                             />
       );
@@ -21,11 +21,11 @@ class VideoRequesterPage extends React.Component {
 
     return (
       <div className="request-page">
-        <VideoSearchForm value={this.props.videoRequester.cache.searchQuery}
+        <VideoSearchForm value={this.props.videoRequester.searchResults.query}
                          searchForVideos={this.props.actions.searchForVideos}
                          updateSearchQueryCache={this.props.actions.updateSearchQueryCache}
                          />
-        {videoSearchResultsComponent}
+        {VideoSearchResultsComponent}
       </div>
     );
   }
