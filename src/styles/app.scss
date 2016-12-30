@@ -1,0 +1,52 @@
+@import 'common';
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $main-bgcolor;
+  color: $main-color;
+  margin: 0;
+  padding: 0 20px;
+  font-family: sans-serif;
+}
+
+.logo {
+  margin: 40px 0;
+  text-align: center;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+
+.menu {
+  border-bottom: 2px solid $main-color;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+
+  a {
+    border: 1px solid $main-color;
+    border-bottom: none;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    color: inherit;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+
+    &.current {
+      background-color: $main-color;
+      color: $main-bgcolor;
+    }
+  }
+}

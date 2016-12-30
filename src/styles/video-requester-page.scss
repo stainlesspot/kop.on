@@ -1,0 +1,23 @@
+@import 'common';
+
+.request-page {
+  padding-top: 30px;
+  text-align: center;
+
+  input {
+    background-color: $main-bgcolor;
+    border: 2px solid $main-color;
+    color: inherit;
+
+    $height: 40px;
+
+    border-radius: $height / 2;
+    height: $height;
+    padding-left: $height / 3;
+    padding-right: $height / 3;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
