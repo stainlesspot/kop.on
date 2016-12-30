@@ -6,7 +6,7 @@
   .video-search-result {
     align-items: center;
     display: flex;
-    margin: 40px 0;
+    margin: 50px 0;
 
     *{
       margin: 0 7px 0 0;
@@ -18,6 +18,11 @@
 
     p {
       font-size: 0.7em;
+      color: rgba(68, 255, 68, 0.5)// #44FF44
+    }
+
+    .text {
+      flex: 1 1 auto;
     }
 
     button {
@@ -25,7 +30,21 @@
       border: 1px solid $main-color;
       border-radius: 10px;
       color: $main-color;
+      flex: 0 0 auto;
       padding: 7px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &.clicked {
+        background-color: $main-color;
+        color: $main-bgcolor;
+      }
+    }
+
+    img {
+      flex: 0 0 auto;
     }
   }
 }
