@@ -1,4 +1,31 @@
+@import 'common';
+
 .video-search-results {
   padding: 60px 0;
 
+  .video-search-result {
+    align-items: center;
+    display: flex;
+    margin: 40px 0;
+
+    *{
+      margin: 0 7px 0 0;
+    }
+
+    h5 {
+      color: #959fff;
+    }
+
+    p {
+      font-size: 0.7em;
+    }
+
+    button {
+      background-color: $main-bgcolor;
+      border: 1px solid $main-color;
+      border-radius: 10px;
+      color: $main-color;
+      padding: 7px;
+    }
+  }
 }

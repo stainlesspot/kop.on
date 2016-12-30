@@ -8,9 +8,7 @@ class VideoSearchResults extends React.Component {
     return (
       <div className="video-search-results">
         {this.props.videos.map(video => (
-          <VideoSearchResult {...video}
-                             key={video.id}
-                             />
+          <VideoSearchResult {...video} key={video.id}/>
         ))}
       </div>
     );
